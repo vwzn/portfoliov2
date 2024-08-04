@@ -72,7 +72,7 @@ html {
 }
 
 .dark-mode .hero {
-    background:#111c71;
+    background: #111c71;
 }
 
 .hero::before {
@@ -106,13 +106,13 @@ html {
     font-size: 3em;
     font-weight: bold;
     margin-bottom: 10px;
-    color:#ffffff;
+    color: #ffffff;
     transform: translateY(-5px) scale(1.05);
 
 }
 
-.hero .subtitle{
-    transform: translateY(-5px) scale(1.05); 
+.hero .subtitle {
+    transform: translateY(-5px) scale(1.05);
 }
 
 .hero-description {
@@ -132,13 +132,14 @@ html {
     transition: background-color 0.1s ease, transform 3s ease;
 }
 
+
 .hero-button:hover {
     transform: translateY(-5px) scale(1.05);
 }
 
 /* About Section */
 .about {
-    padding: 60px 20px;
+    padding: 100px 20px;
     text-align: center;
     background-color: #ffffff;
     transition: background-color 0.3s ease;
@@ -177,7 +178,7 @@ html {
 }
 
 .dark-mode .hero1 {
-    background:#090f39;
+    background: #090f39;
 }
 
 /* hero2 */
@@ -191,16 +192,20 @@ html {
     color: #ffffff;
     clip-path: ellipse(75% 100% at center top);
     transition: background-color 0.3s ease;
+    margin-bottom: 100px;
 }
 
 .dark-mode .hero2 {
-    background:#090f39;
+    background: #090f39;
 }
 
 /* skill & project */
-.skills h2{
+.skills h2 {
     text-align: center;
+    font-size: 2.5em;
+    color: #61dafb;
 }
+
 .section {
     padding: 60px 0;
     position: relative;
@@ -280,8 +285,9 @@ html {
 }
 
 .projects h2 {
-    font-size: 2rem;
     margin-bottom: 2rem;
+    font-size: 2.5em;
+    color: #61dafb;
     text-align: center;
 }
 
@@ -314,7 +320,7 @@ html {
     margin-bottom: 1rem;
 }
 
-.project-card > .project-picture {
+.project-card>.project-picture {
     width: 250px;
     height: auto;
     border-radius: 0.5rem;
@@ -337,9 +343,15 @@ html {
 }
 
 /* Service Section */
-.services h2{
-    text-align: center;
+.services{
+    margin-top: 100px;
 }
+.services h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #61dafb;
+}
+
 .service-cards {
     display: flex;
     flex-wrap: wrap;
@@ -390,7 +402,7 @@ html {
 }
 
 .dark-mode .contact-section {
-    background-color:  #0c1658;
+    background-color: #0c1658;
     color: #ffffff;
 }
 
