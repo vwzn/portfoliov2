@@ -385,11 +385,13 @@ html {
     padding: 60px 20px;
     text-align: center;
     background-color: #0c1658;
+    color: #ffffff;
     transition: background-color 0.3s ease;
 }
 
 .dark-mode .contact-section {
     background-color:  #0c1658;
+    color: #ffffff;
 }
 
 .contact-container {
