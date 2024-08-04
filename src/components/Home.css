@@ -30,7 +30,7 @@ html {
 }
 
 .dark-mode .header {
-    background-color: #1e1e1e;
+    background-color: #000000;
 }
 
 .logo {
@@ -65,14 +65,14 @@ html {
     text-align: center;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(180deg, #ffffff, #000000);
-    color: white;
+    background: #0c1658;
+    color: #ffffff;
     clip-path: ellipse(75% 100% at center top);
     transition: background-color 0.3s ease;
 }
 
 .dark-mode .hero {
-    background: linear-gradient(120deg, #20002c, #cbb4d4);
+    background:#090f39;
 }
 
 .hero::before {
@@ -104,17 +104,15 @@ html {
 
 .name {
     font-size: 3em;
-    font-weight: 900;
+    font-weight: bold;
     margin-bottom: 10px;
-    background: linear-gradient(to right, #61dafb, #39a8d3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:#ffffff;
+    transform: translateY(-5px) scale(1.05);
+
 }
 
-.subtitle,
-.hero-description {
-    color: inherit;
-    /* Sesuaikan dengan mode saat ini */
+.hero .subtitle{
+    transform: translateY(-5px) scale(1.05); 
 }
 
 .hero-description {
@@ -122,6 +120,7 @@ html {
     font-size: 1.2em;
     max-width: 600px;
     margin: 0 auto 30px;
+    transform: translateY(-5px) scale(1.05);
 }
 
 .hero-button {
@@ -130,11 +129,10 @@ html {
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 25px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.1s ease, transform 3s ease;
 }
 
 .hero-button:hover {
-    background-color: #39a8d3;
     transform: translateY(-5px) scale(1.05);
 }
 
@@ -142,7 +140,7 @@ html {
 .about {
     padding: 60px 20px;
     text-align: center;
-    background-color: #f7f7f7;
+    background-color: #ffffff;
     transition: background-color 0.3s ease;
 }
 
@@ -163,7 +161,46 @@ html {
     line-height: 1.6;
 }
 
+
+/* hero1 */
+
+.hero1 {
+    padding: 100px 20px;
+    height: 250px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: #0c1658;
+    color: #ffffff;
+    clip-path: ellipse(75% 100% at center bottom);
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode .hero1 {
+    background:#090f39;
+}
+
+/* hero2 */
+.hero2 {
+    padding: 100px 20px;
+    height: 250px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: #0c1658;
+    color: #ffffff;
+    clip-path: ellipse(75% 100% at center top);
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode .hero2 {
+    background:#090f39;
+}
+
 /* skill & project */
+.skills h2{
+    text-align: center;
+}
 .section {
     padding: 60px 0;
     position: relative;
@@ -210,7 +247,7 @@ html {
     align-items: center;
     padding: 10px;
     border-radius: 8px;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -234,12 +271,12 @@ html {
 /* Project Section */
 .projects {
     padding: 4rem 2rem;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     transition: background-color 0.3s ease;
 }
 
 .dark-mode .projects {
-    background-color: #1e1e1e;
+    background-color: #000000;
 }
 
 .projects h2 {
@@ -257,14 +294,14 @@ html {
 
 .project-card {
     padding: 2rem;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .dark-mode .project-card {
-    background-color: #333333;
+    background-color: #000000;
 }
 
 .project-card:hover {
@@ -300,13 +337,16 @@ html {
 }
 
 /* Service Section */
+.services h2{
+    text-align: center;
+}
 .service-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 60px 20px;
-    background: linear-gradient(to right, #f0f0f0, #f7f7f7);
+    background: #ffffff;
     transition: background 0.3s ease;
 }
 
@@ -401,6 +441,7 @@ html {
     width: 36px;
     height: 36px;
     transition: color 0.3s ease-in-out;
+    color: #0077b5;
 }
 
 .contact-link:hover .icon {

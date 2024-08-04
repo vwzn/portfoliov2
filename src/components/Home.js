@@ -53,6 +53,10 @@ function Home() {
                 <p data-aos="fade-down">Outside of coding, I enjoy gaming and exploring the latest advancements in web development. My career goal is to become a proficient fullstack web developer, combining frontend expertise with backend proficiency to deliver robust digital solutions.</p>
             </section>
 
+            <section className="hero1" >
+            </section>
+            <section className="hero2" >
+            </section>
             {/* Skills Section */}
             <section className="skills" data-aos="fade-up">
                 <h2>My Skills</h2>
