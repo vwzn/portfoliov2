@@ -72,7 +72,7 @@ html {
 }
 
 .dark-mode .hero {
-    background:#090f39;
+    background:#111c71;
 }
 
 .hero::before {
@@ -384,12 +384,12 @@ html {
 .contact-section {
     padding: 60px 20px;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #1a4cff;
     transition: background-color 0.3s ease;
 }
 
 .dark-mode .contact-section {
-    background-color: #000000;
+    background-color:  #1a4cff;
 }
 
 .contact-container {
@@ -441,13 +441,9 @@ html {
     width: 36px;
     height: 36px;
     transition: color 0.3s ease-in-out;
-    color: #0077b5;
 }
 
-.contact-link:hover .icon {
-    color: #0077b5;
-    /* Sesuaikan dengan warna ikon saat hover */
-}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

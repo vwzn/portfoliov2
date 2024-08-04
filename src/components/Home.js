@@ -245,7 +245,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <p className="footer">&copy; 2023 Ahmad Fauzan Abdurrohman. All rights reserved.</p>
+                    <p className="footer">&copy; 2024 Ahmad Fauzan Abdurrohman. All rights reserved.</p>
                 </div>
             </section>
         </div>
