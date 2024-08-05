@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^5.16.6",
     "aos": "^2.3.4",
     "cra-template": "1.2.0",
     "framer-motion": "^11.3.21",

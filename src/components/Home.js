@@ -7,9 +7,12 @@ import { PortfolioV1 } from '../assets';
 import AOS from 'aos';
 import { Link } from 'react-scroll';
 import 'aos/dist/aos.css';
+import NightsStayIcon from '@mui/icons-material/NightsStay';
+import WbSunnyIcon from '@mui/icons-material/WbSunny';
+import ArrowUpwardSharpIcon from '@mui/icons-material/ArrowUpwardSharp';
 
 function Home() {
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(true);
 
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);
@@ -33,23 +36,21 @@ function Home() {
             </Helmet>
             <header className="header">
                 <button className="toggle-button" onClick={toggleDarkMode}>
-                    {darkMode ? 'Light Mode' : 'Dark Mode'}
+                    {darkMode ? <WbSunnyIcon /> : < NightsStayIcon />}
                 </button>
             </header>
             {/* Hero Section */}
-            <section className="hero" data-aos="fade-up">
+            <section className="hero" data-aos="fade-up" id="home">
                 <div className="hero-content">
                     <img src={Me} alt="Profile" className="profile-picture" />
-                    <h1 className="name">
+                    <h1 className="name">Ahmad Fauzan Abdurrohman</h1>
+                    <p className="hero-description">
                         <ReactTypingEffect
-                            text={['Ahmad Fauzan Abdurrohman', 'Frontend Web Developer']}
-                            speed={100}
-                            eraseDelay={100}
-                            typingDelay={100}
-                        />
-                    </h1>
-                    <p className="subtitle">Active Student at STMIK Mardira Indonesia</p>
-                    <p className="hero-description">Aspiring frontend web developer with a passion for coding and technology.</p>
+                            text={['JavaScript Developer', 'Frontend Web Developer', '']}
+                            speed={200}
+                            eraseDelay={1000}
+                            typingDelay={200}
+                        /></p>
                     <Link to="contact" smooth={true} duration={500} className="hero-button">Contact</Link>
                 </div>
             </section>
@@ -61,10 +62,8 @@ function Home() {
                 <p data-aos="fade-down">Outside of coding, I enjoy gaming and exploring the latest advancements in web development. My career goal is to become a proficient fullstack web developer, combining frontend expertise with backend proficiency to deliver robust digital solutions.</p>
             </section>
 
-            <section className="hero1" >
-            </section>
-            <section className="hero2" >
-            </section>
+            {/* <section className="hero1" >
+            </section> */}
             {/* Skills Section */}
             <section className="skills" data-aos="fade-up">
                 <h2 data-aos="zoom-out">My Skills</h2>
@@ -238,7 +237,9 @@ function Home() {
                     </div>
                 </div>
             </section>
-
+            <div className="container-arrow">
+                <Link to="home" smooth={true} duration={500} className="arrow-up"><ArrowUpwardSharpIcon /></Link>
+            </div>
             {/* Footer */}
             <section className="contact-section" data-aos="fade-up" id="contact">
                 <div className="contact-container">
@@ -266,7 +267,7 @@ function Home() {
                         {/* LinkedIn */}
                         <div className="contact-item">
                             <div className="contact-link-wrapper">
-                                <a href="https://www.linkedin.com/in/ahmad-fauzan-abdurrohman" target="_blank" className="contact-link">
+                                <a href="https://www.linkedin.com/in/ahmad-fauzan-abdurrohman-440996269" target="_blank" className="contact-link">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" className="icon" stroke="currentColor" fill="currentColor" strokeWidth="0" aria-hidden="true" focusable="false" viewBox="0 0 448 512">
                                         <path d="M100.28 448H7.4V148.9h92.88zm-46.14-350C24.1 98 0 73.9 0 42.8A42.66 42.66 0 0 1 53.34 0C82.5 0 107 24.7 107 56.7c0 31.3-24.5 56.3-52.8 56.3zm394.2 350h-92.68V302.4c0-34.7-.7-79.4-48.4-79.4-48.4 0-55.8 37.8-55.8 76.8v148.2h-92.68V148.9H256v40.8h1.3c12.8-24.2 44.1-48.4 90.8-48.4 97.2 0 115.1 64 115.1 147.1z" />
                                     </svg>
@@ -276,7 +277,7 @@ function Home() {
                         {/* GitHub */}
                         <div className="contact-item">
                             <div className="contact-link-wrapper">
-                                <a href="https://github.com/Fauzan1168" target="_blank" className="contact-link">
+                                <a href="https://github.com/vwzn" target="_blank" className="contact-link">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" className="icon" stroke="currentColor" fill="currentColor" strokeWidth="0" aria-hidden="true" focusable="false" viewBox="0 0 1024 1024">
                                         <path d="M511.6 76C265.1 76 64 277.3 64 524c0 198.3 126.8 366.7 303.1 425.9 22.1 4.1 30.2-9.6 30.2-21.4 0-10.5-.4-45.2-.7-82.1-123.2 22.6-149.2-53.4-149.2-53.4-20.1-50.7-49.1-64.2-49.1-64.2-40.1-27.4 3-26.8 3-26.8 44.3 3.1 67.6 45.5 67.6 45.5 39.4 67.4 103.4 47.9 128.7 36.6 4-28.5 15.4-47.9 28-58.9-98.3-11.2-201.6-49.1-201.6-218.5 0-48.3 17.3-87.7 45.5-118.6-4.5-11.2-19.7-56.6 4.3-118 0 0 37.1-11.9 121.5 45.3 35.2-9.8 72.9-14.7 110.5-14.9 37.6.2 75.3 5.1 110.5 14.9 84.3-57.2 121.3-45.3 121.3-45.3 24.1 61.4 8.9 106.8 4.4 118 28.3 30.9 45.3 70.3 45.3 118.6 0 169.9-103.6 207.2-202.3 218.1 15.9 13.7 30.1 41.1 30.1 82.9 0 59.9-.6 108.3-.6 123.1 0 11.9 8 25.9 30.2 21.4C833.3 890.3 960 721.8 960 524 960 277.3 758.9 76 512.4 76z" />
                                     </svg>
@@ -284,6 +285,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
+
                     <p className="footer">&copy; 2024 Ahmad Fauzan Abdurrohman. All rights reserved.</p>
                 </div>
             </section>
