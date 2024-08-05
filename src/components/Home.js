@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import './Home.css';
+import ReactTypingEffect from 'react-typing-effect'; // Import ReactTypingEffect
 import { Me } from '../assets';
 import { PortfolioV1 } from '../assets';
 import AOS from 'aos';
@@ -39,7 +40,14 @@ function Home() {
             <section className="hero" data-aos="fade-up">
                 <div className="hero-content">
                     <img src={Me} alt="Profile" className="profile-picture" />
-                    <h1 className="name">Ahmad Fauzan Abdurrohman</h1>
+                    <h1 className="name">
+                        <ReactTypingEffect
+                            text={['Ahmad Fauzan Abdurrohman', 'Frontend Web Developer']}
+                            speed={100}
+                            eraseDelay={100}
+                            typingDelay={100}
+                        />
+                    </h1>
                     <p className="subtitle">Active Student at STMIK Mardira Indonesia</p>
                     <p className="hero-description">Aspiring frontend web developer with a passion for coding and technology.</p>
                     <Link to="contact" smooth={true} duration={500} className="hero-button">Contact</Link>
@@ -76,33 +84,45 @@ function Home() {
                                 <img src="https://svgl-badge.vercel.app/api/Language/TypeScript?theme=dark" />
                             </div>
                             <div className="skill-card" data-aos="fade-right" data-aos-delay="400">
-                                <img src="https://svgl-badge.vercel.app/api/Library/React?theme=dark" />
+                                <img src="https://svgl-badge.vercel.app/api/Language/Java?theme=dark" />
                             </div>
                             <div className="skill-card" data-aos="fade-right" data-aos-delay="500">
-                                <img src="https://svgl-badge.vercel.app/api/Framework/Next.js?theme=dark" />
+                                <img src="https://svgl-badge.vercel.app/api/Language/Php?theme=dark" />
                             </div>
                             <div className="skill-card" data-aos="fade-right" data-aos-delay="600">
-                                <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=dark" />
+                                <img src="https://svgl-badge.vercel.app/api/Library/React?theme=dark" />
                             </div>
                             <div className="skill-card" data-aos="fade-right" data-aos-delay="700">
-                                <img src="https://svgl-badge.vercel.app/api/Framework/Bootstrap?theme=dark" />
+                                <img src="https://svgl-badge.vercel.app/api/Library/Node.js?theme=dark" />
                             </div>
                             <div className="skill-card" data-aos="fade-right" data-aos-delay="800">
-                                <img src="https://svgl-badge.vercel.app/api/Framework/Laravel?theme=dark" />
+                                <img src="https://svgl-badge.vercel.app/api/Library/React%20Router?theme=dark" />
                             </div>
                             <div className="skill-card" data-aos="fade-right" data-aos-delay="900">
-                                <img src="https://svgl-badge.vercel.app/api/Database/MySQL?theme=dark" />
+                                <img src="https://svgl-badge.vercel.app/api/Framework/Next.js?theme=dark" />
                             </div>
                             <div className="skill-card" data-aos="fade-right" data-aos-delay="1000">
-                                <img src="https://svgl-badge.vercel.app/api/Software/Git?theme=dark" />
+                                <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=dark" />
                             </div>
                             <div className="skill-card" data-aos="fade-right" data-aos-delay="1100">
-                                <img src="https://svgl-badge.vercel.app/api/Design/Figma?theme=dark" />
+                                <img src="https://svgl-badge.vercel.app/api/Framework/Bootstrap?theme=dark" />
                             </div>
                             <div className="skill-card" data-aos="fade-right" data-aos-delay="1200">
-                                <img src="https://svgl-badge.vercel.app/api/Hosting/Vercel?theme=dark" />
+                                <img src="https://svgl-badge.vercel.app/api/Framework/Laravel?theme=dark" />
                             </div>
                             <div className="skill-card" data-aos="fade-right" data-aos-delay="1300">
+                                <img src="https://svgl-badge.vercel.app/api/Database/MySQL?theme=dark" />
+                            </div>
+                            <div className="skill-card" data-aos="fade-right" data-aos-delay="1400">
+                                <img src="https://svgl-badge.vercel.app/api/Software/Git?theme=dark" />
+                            </div>
+                            <div className="skill-card" data-aos="fade-right" data-aos-delay="1500">
+                                <img src="https://svgl-badge.vercel.app/api/Design/Figma?theme=dark" />
+                            </div>
+                            <div className="skill-card" data-aos="fade-right" data-aos-delay="1600">
+                                <img src="https://svgl-badge.vercel.app/api/Hosting/Vercel?theme=dark" />
+                            </div>
+                            <div className="skill-card" data-aos="fade-right" data-aos-delay="1700">
                                 <img src="https://svgl-badge.vercel.app/api/Software/Stack%20Overflow?theme=dark" />
                             </div>
                         </>
@@ -121,39 +141,58 @@ function Home() {
                                 <img src="https://svgl-badge.vercel.app/api/Language/TypeScript?theme=light" />
                             </div>
                             <div className="skill-card" data-aos="fade-right" data-aos-delay="400">
-                                <img src="https://svgl-badge.vercel.app/api/Library/React?theme=light" />
+                                <img src="https://svgl-badge.vercel.app/api/Language/Java?theme=light" />
                             </div>
                             <div className="skill-card" data-aos="fade-right" data-aos-delay="500">
-                                <img src="https://svgl-badge.vercel.app/api/Framework/Next.js?theme=light" />
+                                <img src="https://svgl-badge.vercel.app/api/Language/Php?theme=light" />
                             </div>
                             <div className="skill-card" data-aos="fade-right" data-aos-delay="600">
-                                <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=light" />
+                                <img src="https://svgl-badge.vercel.app/api/Library/React?theme=light" />
                             </div>
                             <div className="skill-card" data-aos="fade-right" data-aos-delay="700">
-                                <img src="https://svgl-badge.vercel.app/api/Framework/Bootstrap?theme=light" />
+                                <img src="https://svgl-badge.vercel.app/api/Library/Node.js?theme=light" />
                             </div>
                             <div className="skill-card" data-aos="fade-right" data-aos-delay="800">
-                                <img src="https://svgl-badge.vercel.app/api/Framework/Laravel?theme=light" />
+                                <img src="https://svgl-badge.vercel.app/api/Library/React%20Router?theme=light" />
                             </div>
                             <div className="skill-card" data-aos="fade-right" data-aos-delay="900">
-                                <img src="https://svgl-badge.vercel.app/api/Database/MySQL?theme=light" />
+                                <img src="https://svgl-badge.vercel.app/api/Framework/Next.js?theme=light" />
                             </div>
                             <div className="skill-card" data-aos="fade-right" data-aos-delay="1000">
-                                <img src="https://svgl-badge.vercel.app/api/Software/Git?theme=light" />
+                                <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=light" />
                             </div>
                             <div className="skill-card" data-aos="fade-right" data-aos-delay="1100">
-                                <img src="https://svgl-badge.vercel.app/api/Design/Figma?theme=light" />
+                                <img src="https://svgl-badge.vercel.app/api/Framework/Bootstrap?theme=light" />
                             </div>
                             <div className="skill-card" data-aos="fade-right" data-aos-delay="1200">
-                                <img src="https://svgl-badge.vercel.app/api/Hosting/Vercel?theme=light" />
+                                <img src="https://svgl-badge.vercel.app/api/Framework/Laravel?theme=light" />
                             </div>
                             <div className="skill-card" data-aos="fade-right" data-aos-delay="1300">
+                                <img src="https://svgl-badge.vercel.app/api/Database/MySQL?theme=light" />
+                            </div>
+                            <div className="skill-card" data-aos="fade-right" data-aos-delay="1400">
+                                <img src="https://svgl-badge.vercel.app/api/Software/Git?theme=light" />
+                            </div>
+                            <div className="skill-card" data-aos="fade-right" data-aos-delay="1500">
+                                <img src="https://svgl-badge.vercel.app/api/Design/Figma?theme=light" />
+                            </div>
+                            <div className="skill-card" data-aos="fade-right" data-aos-delay="1600">
+                                <img src="https://svgl-badge.vercel.app/api/Hosting/Vercel?theme=light" />
+                            </div>
+                            <div className="skill-card" data-aos="fade-right" data-aos-delay="1700">
                                 <img src="https://svgl-badge.vercel.app/api/Software/Stack%20Overflow?theme=light" />
                             </div>
                         </>
+
                     )}
                 </div>
-
+                <div className="most-used-lang" data-aos="fade-up">
+                    {darkMode ? (
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=vwzn&locale=en&layout=compact&theme=dark&hide_border=true&bg_color=171717&card_width=600" />
+                    ) : (
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=vwzn&locale=en&layout=compact&theme=white&hide_border=true&bg_color=00000&card_width=600" />
+                    )}
+                </div>
             </section>
 
             {/* Services Section */}

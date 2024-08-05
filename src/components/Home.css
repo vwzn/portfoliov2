@@ -72,7 +72,7 @@ html {
 }
 
 .dark-mode .hero {
-    background: #111c71;
+    background: #2E357D;
 }
 
 .hero::before {
@@ -124,7 +124,7 @@ html {
 }
 
 .hero-button {
-    background-color: #61dafb;
+    background-color: #E4F8FF;
     color: #000000;
     padding: 15px 30px;
     text-decoration: none;
@@ -147,11 +147,16 @@ html {
 
 .dark-mode .about {
     background-color: #000000;
+
+}
+
+.dark-mode .about>h2 {
+    color: #61dafb;
 }
 
 .about h2 {
     font-size: 2.5em;
-    color: #61dafb;
+    color: #02475A;
     margin-bottom: 20px;
 }
 
@@ -178,7 +183,7 @@ html {
 }
 
 .dark-mode .hero1 {
-    background: #090f39;
+    background: #2E357D;
 }
 
 /* hero2 */
@@ -196,13 +201,17 @@ html {
 }
 
 .dark-mode .hero2 {
-    background: #090f39;
+    background: #2E357D;
 }
 
 /* skill & project */
 .skills h2 {
     text-align: center;
     font-size: 2.5em;
+    color: #02475A;
+}
+
+.dark-mode .skills>h2 {
     color: #61dafb;
 }
 
@@ -266,6 +275,20 @@ html {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.most-used-lang  {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.dark-mode .most-used-lang {
+    background-color: #000000;
+}
+.most-used-lang img {
+    width: 100%;
+    height: auto;
+}
 
 /* Dark Mode Styles */
 .dark-mode .skill-card {
@@ -287,8 +310,12 @@ html {
 .projects h2 {
     margin-bottom: 2rem;
     font-size: 2.5em;
-    color: #61dafb;
+    color: #02475A;
     text-align: center;
+}
+
+.dark-mode .projects>h2 {
+    color: #61dafb;
 }
 
 .project-cards {
@@ -333,9 +360,13 @@ html {
 }
 
 .project-card a {
-    color: #007bff;
+    color: #004085;
     text-decoration: none;
     font-weight: bold;
+}
+
+.dark-mode .project-card>a {
+    color: #75B8FF;
 }
 
 .project-card a:hover {
@@ -343,12 +374,17 @@ html {
 }
 
 /* Service Section */
-.services{
+.services {
     margin-top: 100px;
 }
+
 .services h2 {
     text-align: center;
     font-size: 2.5em;
+    color: #02475A;
+}
+
+.dark-mode .services>h2 {
     color: #61dafb;
 }
 
@@ -363,7 +399,7 @@ html {
 }
 
 .dark-mode .service-cards {
-    background: linear-gradient(to right, #292929, #202020);
+    background: linear-gradient(to top, #000000, #B3B3B3, #000000);
 }
 
 .service-card {
@@ -402,7 +438,7 @@ html {
 }
 
 .dark-mode .contact-section {
-    background-color: #0c1658;
+    background: linear-gradient(to bottom, #000000, #2E357D);
     color: #ffffff;
 }
 
@@ -490,6 +526,11 @@ html {
     .toggle-button {
         margin-top: 10px;
     }
+    
+    .most-used-lang img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media (max-width: 480px) {
@@ -515,5 +556,9 @@ html {
 
     .service-card {
         width: 100%;
+    }
+    .most-used-lang img {
+        width: 100%;
+        height: auto;
     }
 }
