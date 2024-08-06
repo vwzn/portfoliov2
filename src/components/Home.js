@@ -214,7 +214,7 @@ function Home() {
             <section className="projects" data-aos="fade-up">
                 <h2>My Projects</h2>
                 <div className="project-cards">
-                    <div className="project-card" data-aos="fade-right"  data-aos-delay="700">
+                    <div className="project-card" data-aos="fade-right" data-aos-delay="700">
                         <h3>Portfolio v1</h3>
                         <img src={PortfolioV1} alt="Portfolio v1" className="project-picture" />
                         <p>A personal portfolio website showcasing my skills and projects.</p>
@@ -243,16 +243,18 @@ function Home() {
                         <div>
                             {darkMode ? (
                                 <div>
+                                    <img src="https://svgl-badge.vercel.app/api/Language/TypeScript?theme=dark" />
                                     <img src="https://svgl-badge.vercel.app/api/Framework/Next.js?theme=dark" />
                                     <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=dark" />
-                                    <img src="https://svgl-badge.vercel.app/api/Database/PostgreSQL?theme=dark"/>
+                                    <img src="https://svgl-badge.vercel.app/api/Database/PostgreSQL?theme=dark" />
                                 </div>
 
                             ) : (
                                 <div>
+                                    <img src="https://svgl-badge.vercel.app/api/Language/TypeScript?theme=light" />
                                     <img src="https://svgl-badge.vercel.app/api/Framework/Next.js?theme=light" />
                                     <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=light" />
-                                    <img src="https://svgl-badge.vercel.app/api/Database/PostgreSQL?theme=light"/>
+                                    <img src="https://svgl-badge.vercel.app/api/Database/PostgreSQL?theme=light" />
                                 </div>
                             )}
 
