@@ -240,7 +240,7 @@ function Home() {
 
                         </div>
                         <p>Website</p>
-                        <a href="https://ahmad-fauzan.vercel.app">vwzn-dashboard.vercel.app</a>
+                        <a href="https://vwzn-dashboard.vercel.app">vwzn-dashboard.vercel.app</a>
                     </div>
                     <div className="project-card" data-aos="fade-right" data-aos-delay="700">
                         <h3>Portfolio v1</h3>
