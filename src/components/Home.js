@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import './Home.css';
 import ReactTypingEffect from 'react-typing-effect'; // Import ReactTypingEffect
 import { Me } from '../assets';
+import { NextDashboard } from '../assets';
 import { PortfolioV1 } from '../assets';
 import AOS from 'aos';
 import { Link } from 'react-scroll';
@@ -213,7 +214,7 @@ function Home() {
             <section className="projects" data-aos="fade-up">
                 <h2>My Projects</h2>
                 <div className="project-cards">
-                    <div className="project-card" data-aos="fade-right">
+                    <div className="project-card" data-aos="fade-right"  data-aos-delay="700">
                         <h3>Portfolio v1</h3>
                         <img src={PortfolioV1} alt="Portfolio v1" className="project-picture" />
                         <p>A personal portfolio website showcasing my skills and projects.</p>
@@ -234,6 +235,30 @@ function Home() {
                         </div>
                         <p>Website</p>
                         <a href="https://ahmad-fauzan.vercel.app">ahmad-fauzan.vercel.app</a>
+                    </div>
+                    <div className="project-card" data-aos="fade-right" data-aos-delay="700">
+                        <h3>Next Js Dashboard</h3>
+                        <img src={NextDashboard} alt="Next Js Dashboard" className="project-picture" />
+                        <p>A simple dashboard using Next Js.</p>
+                        <div>
+                            {darkMode ? (
+                                <div>
+                                    <img src="https://svgl-badge.vercel.app/api/Framework/Next.js?theme=dark" />
+                                    <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=dark" />
+                                    <img src="https://svgl-badge.vercel.app/api/Database/PostgreSQL?theme=dark"/>
+                                </div>
+
+                            ) : (
+                                <div>
+                                    <img src="https://svgl-badge.vercel.app/api/Framework/Next.js?theme=light" />
+                                    <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=light" />
+                                    <img src="https://svgl-badge.vercel.app/api/Database/PostgreSQL?theme=light"/>
+                                </div>
+                            )}
+
+                        </div>
+                        <p>Website</p>
+                        <a href="https://ahmad-fauzan.vercel.app">vwzn-dashboard.vercel.app</a>
                     </div>
                 </div>
             </section>
