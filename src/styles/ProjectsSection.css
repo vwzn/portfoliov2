@@ -1,0 +1,208 @@
+/* Base styles for the section */
+.projects {
+    padding: 2em;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2.5em;
+}
+
+.dark-mode .projects > h2 {
+    color: #61dafb;
+}
+
+/* Project card container */
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+/* Individual project card */
+.project-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 500px;
+    height: 650px; /* Increased height for better content fitting */
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.dark-mode .project-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 254, 254, 0.544);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgb(255, 255, 255);
+}
+
+/* Project title */
+.project-title h3 {
+    margin: 0;
+    padding: 1em;
+    background-color: #0c1658;
+    color: white;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.dark-mode .project-title>h3 {
+    font-size: 1.8em;
+    background: linear-gradient(to right, #61dafb, #39a8d3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: black;
+}
+
+/* Project image */
+.project-picture img {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    display: block;
+}
+
+/* Project subtitle */
+.project-subtitle {
+    height: 90px;
+}
+
+.project-subtitle p {
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.5; /* Improved readability */
+}
+
+/* Technology used section */
+.technology {
+    padding: 1em;
+    text-align: center;
+    height: 120px; /* Center align the technology icons */
+}
+
+.title-tech h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.icon-tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 0.5em;
+}
+
+/* Project links */
+.website-project,
+.github-project {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.website-project p,
+.github-project p {
+    margin: 0;
+    flex: 1;
+    font-size: 1em;
+}
+
+.website-project a,
+.github-project a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    word-break: break-all;
+    flex: 2;
+    text-align: right;
+    font-size: 0.9em;
+    color: #0093bc;
+}
+
+.dark-mode .website-project > a,
+.dark-mode .github-project > a {
+
+    color: #61dafb;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .project-card {
+        width: 100%;
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .projects h2 {
+        font-size: 2.5em;
+    }
+
+    .project-title h3 {
+        font-size: 1.5em;
+    }
+
+    .project-subtitle p {
+        font-size: 1em;
+    }
+
+    .technology {
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .website-project p,
+    .github-project p {
+        font-size: 0.9em;
+    }
+
+    .website-project a,
+    .github-project a {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        width: 100%;
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .projects h2 {
+        font-size: 2.5em;
+    }
+
+    .project-title h3 {
+        font-size: 1.2em;
+    }
+
+    .project-subtitle p {
+        font-size: 0.9em;
+    }
+
+    .technology {
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .website-project p,
+    .github-project p {
+        font-size: 0.8em;
+    }
+
+    .website-project a,
+    .github-project a {
+        font-size: 0.7em;
+    }
+}

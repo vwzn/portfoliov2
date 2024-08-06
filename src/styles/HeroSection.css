@@ -1,0 +1,74 @@
+/* Hero Section */
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: #0c1658;
+    color: #ffffff;
+    clip-path: ellipse(75% 100% at center top);
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode .hero {
+    background: #2E357D;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-picture:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.name {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+    transform: translateY(-5px) scale(1.05);
+
+}
+
+.hero-description {
+    margin: 20px 0;
+    font-size: 2em;
+    font-weight: bold;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    transform: translateY(-5px) scale(1.05);
+}
+
+.hero-button {
+    background-color: #E4F8FF;
+    color: #000000;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.1s ease, transform 3s ease;
+}
+
+
+.hero-button:hover {
+    transform: translateY(-5px) scale(1.05);
+}

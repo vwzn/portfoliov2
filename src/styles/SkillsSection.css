@@ -1,0 +1,60 @@
+/* skill */
+.skills h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #02475A;
+}
+
+.dark-mode .skills>h2 {
+    color: #61dafb;
+}
+
+.skill-grid {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.skill-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.most-used-lang {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-mode .most-used-lang {
+    background-color: #000000;
+}
+
+.most-used-lang img {
+    width: 100%;
+    height: auto;
+}
+
+.dark-mode .skill-card {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}

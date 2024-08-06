@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from './components/Home'; // Ensure the correct path to the component
+import Home from './page/Home';
 
 function App() {
   return (
