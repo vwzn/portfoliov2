@@ -215,28 +215,6 @@ function Home() {
                 <h2>My Projects</h2>
                 <div className="project-cards">
                     <div className="project-card" data-aos="fade-right" data-aos-delay="700">
-                        <h3>Portfolio v1</h3>
-                        <img src={PortfolioV1} alt="Portfolio v1" className="project-picture" />
-                        <p>A personal portfolio website showcasing my skills and projects.</p>
-                        <div>
-                            {darkMode ? (
-                                <div>
-                                    <img src="https://svgl-badge.vercel.app/api/Language/HTML5?theme=dark" />
-                                    <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=dark" />
-                                </div>
-
-                            ) : (
-                                <div>
-                                    <img src="https://svgl-badge.vercel.app/api/Language/HTML5?theme=light" />
-                                    <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=light" />
-                                </div>
-                            )}
-
-                        </div>
-                        <p>Website</p>
-                        <a href="https://ahmad-fauzan.vercel.app">ahmad-fauzan.vercel.app</a>
-                    </div>
-                    <div className="project-card" data-aos="fade-right" data-aos-delay="700">
                         <h3>Next Js Dashboard</h3>
                         <img src={NextDashboard} alt="Next Js Dashboard" className="project-picture" />
                         <p>A simple dashboard using Next Js.</p>
@@ -264,6 +242,29 @@ function Home() {
                         <p>Website</p>
                         <a href="https://ahmad-fauzan.vercel.app">vwzn-dashboard.vercel.app</a>
                     </div>
+                    <div className="project-card" data-aos="fade-right" data-aos-delay="700">
+                        <h3>Portfolio v1</h3>
+                        <img src={PortfolioV1} alt="Portfolio v1" className="project-picture" />
+                        <p>A personal portfolio website showcasing my skills and projects.</p>
+                        <div>
+                            {darkMode ? (
+                                <div>
+                                    <img src="https://svgl-badge.vercel.app/api/Language/HTML5?theme=dark" />
+                                    <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=dark" />
+                                </div>
+
+                            ) : (
+                                <div>
+                                    <img src="https://svgl-badge.vercel.app/api/Language/HTML5?theme=light" />
+                                    <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=light" />
+                                </div>
+                            )}
+
+                        </div>
+                        <p>Website</p>
+                        <a href="https://ahmad-fauzan.vercel.app">ahmad-fauzan.vercel.app</a>
+                    </div>
+
                 </div>
             </section>
             <div className="container-arrow">
