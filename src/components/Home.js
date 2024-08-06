@@ -243,6 +243,7 @@ function Home() {
                         <div>
                             {darkMode ? (
                                 <div>
+                                    <img src="https://svgl-badge.vercel.app/api/Language/JavaScript?theme=dark" />
                                     <img src="https://svgl-badge.vercel.app/api/Language/TypeScript?theme=dark" />
                                     <img src="https://svgl-badge.vercel.app/api/Framework/Next.js?theme=dark" />
                                     <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=dark" />
@@ -251,6 +252,7 @@ function Home() {
 
                             ) : (
                                 <div>
+                                    <img src="https://svgl-badge.vercel.app/api/Language/JavaScript?theme=light" />
                                     <img src="https://svgl-badge.vercel.app/api/Language/TypeScript?theme=light" />
                                     <img src="https://svgl-badge.vercel.app/api/Framework/Next.js?theme=light" />
                                     <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=light" />
