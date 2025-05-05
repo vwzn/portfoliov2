@@ -18,6 +18,7 @@ import SkillsSection from '../components/SkillsSection';
 import ServicesSection from '../components/ServicesSection';
 import ProjectsSection from '../components/ProjectsSection';
 import ContactSection from '../components/ContactSection';
+import SplashCursor from './SplashCursor';
 
 
 function Home() {
@@ -33,6 +34,7 @@ function Home() {
 
     return (
         <div className={darkMode ? 'app dark-mode' : 'app'}>
+            <SplashCursor />
             <Helmet>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />

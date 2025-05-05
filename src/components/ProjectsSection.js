@@ -26,16 +26,16 @@ const ProjectsSection = ({ darkMode }) => {
                             <div className="icon-tech">
                                 {darkMode ? (
                                     <>
-                                        <img src="https://svgl-badge.vercel.app/api/Language/JavaScript?theme=dark" />
                                         <img src="https://svgl-badge.vercel.app/api/Language/TypeScript?theme=dark" />
+                                        <img src="https://svgl-badge.vercel.app/api/Language/JavaScript?theme=dark" />
                                         <img src="https://svgl-badge.vercel.app/api/Framework/Next.js?theme=dark" />
                                         <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=dark" />
                                         <img src="https://svgl-badge.vercel.app/api/Database/PostgreSQL?theme=dark" />
                                     </>
                                 ) : (
                                     <>
-                                        <img src="https://svgl-badge.vercel.app/api/Language/JavaScript?theme=light" />
                                         <img src="https://svgl-badge.vercel.app/api/Language/TypeScript?theme=light" />
+                                        <img src="https://svgl-badge.vercel.app/api/Language/JavaScript?theme=light" />
                                         <img src="https://svgl-badge.vercel.app/api/Framework/Next.js?theme=light" />
                                         <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=light" />
                                         <img src="https://svgl-badge.vercel.app/api/Database/PostgreSQL?theme=light" />
@@ -70,11 +70,13 @@ const ProjectsSection = ({ darkMode }) => {
                                 {darkMode ? (
                                     <>
                                         <img src="https://svgl-badge.vercel.app/api/Language/HTML5?theme=dark" />
+                                        <img src="https://svgl-badge.vercel.app/api/Language/CSS?theme=dark" />
                                         <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=dark" />
                                     </>
                                 ) : (
                                     <>
                                         <img src="https://svgl-badge.vercel.app/api/Language/HTML5?theme=light" />
+                                        <img src="https://svgl-badge.vercel.app/api/Language/CSS?theme=light" />
                                         <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=light" />
                                     </>
                                 )}
