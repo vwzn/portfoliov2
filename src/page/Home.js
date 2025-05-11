@@ -12,13 +12,15 @@ import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import ArrowUpwardSharpIcon from '@mui/icons-material/ArrowUpwardSharp';
 
 //components
-import HeroSection from '../components/HeroSection';
+import HeroSection from '../components/Herosection';
 import AboutSection from '../components/AboutSection';
 import SkillsSection from '../components/SkillsSection';
 import ServicesSection from '../components/ServicesSection';
 import ProjectsSection from '../components/ProjectsSection';
 import ContactSection from '../components/ContactSection';
 import SplashCursor from './SplashCursor';
+
+
 
 
 function Home() {

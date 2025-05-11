@@ -1,8 +1,9 @@
 import React from 'react'
-import ReactTypingEffect from 'react-typing-effect'; 
+import ReactTypingEffect from 'react-typing-effect';
 import { Link } from 'react-scroll';
 import { Me } from '../assets';
 import '../styles/HeroSection.css';
+
 const HeroSection = () => {
     return (
         <>
