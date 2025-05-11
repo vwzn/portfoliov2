@@ -12,7 +12,7 @@ import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import ArrowUpwardSharpIcon from '@mui/icons-material/ArrowUpwardSharp';
 
 //components
-import HeroSection from '../components/Herosection';
+import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
 import SkillsSection from '../components/SkillsSection';
 import ServicesSection from '../components/ServicesSection';
