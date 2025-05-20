@@ -2,5 +2,6 @@ import HomeBg from './image/home.jpg';
 import Me from './image/me.png';
 import PortfolioV1 from './image/portfoliov1.jpg'
 import NextDashboard from './image/nexjs-dashboard.jpg'
+import Gsv from './image/gsv.jpg'
 
-export { HomeBg, Me, PortfolioV1, NextDashboard };
+export { HomeBg, Me, PortfolioV1, NextDashboard,Gsv };
