@@ -124,9 +124,19 @@ const SkillsSection = ({ darkMode }) => {
                 </div>
                 <div className="most-used-lang" data-aos="fade-up">
                     {darkMode ? (
-                        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=vwzn&locale=en&layout=compact&theme=dark&hide_border=true&bg_color=171717&card_width=600" />
+                        <img
+                            src="https://github-readme-stats.vercel.app/api/top-langs?username=vwzn&locale=en&layout=compact&theme=dark&hide_border=true&bg_color=171717&card_width=600"
+                            alt="Top Programming Languages - Dark Theme"
+                            title="My Most Used Programming Languages"
+                            loading="lazy"
+                        />
                     ) : (
-                        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=vwzn&locale=en&layout=compact&theme=white&hide_border=true&bg_color=00000&card_width=600" />
+                        <img
+                            src="https://github-readme-stats.vercel.app/api/top-langs?username=vwzn&locale=en&layout=compact&theme=white&hide_border=true&bg_color=00000&card_width=600"
+                            alt="Top Programming Languages - Light Theme"
+                            title="My Most Used Programming Languages"
+                            loading="lazy"
+                        />
                     )}
                 </div>
             </section>

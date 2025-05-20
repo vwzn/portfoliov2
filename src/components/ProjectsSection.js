@@ -2,6 +2,7 @@ import React from 'react'
 import { Gsv } from '../assets';
 import { NextDashboard } from '../assets';
 import { PortfolioV1 } from '../assets';
+import { PortfolioV2 } from '../assets';
 import '../styles/ProjectsSection.css';
 
 const ProjectsSection = ({ darkMode }) => {
@@ -12,10 +13,73 @@ const ProjectsSection = ({ darkMode }) => {
                 <div className="project-cards">
                     <div className="project-card" data-aos="fade-right" data-aos-delay="700">
                         <div className="project-title">
+                            <h3>Portfolio v2</h3>
+                        </div>
+                        <div className="project-picture">
+                            <img src={PortfolioV2} alt="Next Js Dashboard" />
+                        </div>
+                        <div className="project-subtitle">
+                            <p>A personal portfolio website showcasing my skills and projects.</p>
+                        </div>
+                        <div className="technology">
+                            <div className="title-tech">
+                                <h3>Technology Used</h3>
+                            </div>
+                            <div className="icon-tech">
+                                {darkMode ? (
+                                    <>
+                                        <img
+                                            src="https://svgl-badge.vercel.app/api/Language/JavaScript?theme=dark"
+                                            alt="JavaScript"
+                                            title="JavaScript Language"
+                                        />
+                                        <img
+                                            src="https://svgl-badge.vercel.app/api/Library/React?theme=dark"
+                                            alt="React"
+                                            title="React Framework"
+                                        />
+                                        <img
+                                            src="https://svgl-badge.vercel.app/api/Language/CSS?theme=dark"
+                                            alt="CSS"
+                                            title="CSS Styling"
+                                        />
+                                    </>
+                                ) : (
+                                    <>
+                                        <img
+                                            src="https://svgl-badge.vercel.app/api/Language/JavaScript?theme=light"
+                                            alt="JavaScript"
+                                            title="JavaScript Language"
+                                        />
+                                        <img
+                                            src="https://svgl-badge.vercel.app/api/Library/React?theme=light"
+                                            alt="React"
+                                            title="React Framework"
+                                        />
+                                        <img
+                                            src="https://svgl-badge.vercel.app/api/Language/CSS?theme=light"
+                                            alt="CSS"
+                                            title="CSS Styling"
+                                        />
+                                    </>
+                                )}
+                            </div>
+                        </div>
+                        <div className="website-project">
+                            <p>Website</p>
+                            <a href="https://github-stats-app.vercel.app">github-stats-app.vercel.app</a>
+                        </div>
+                        <div className="github-project">
+                            <p>Github</p>
+                            <a href="https://github.com/vwzn/github-stats-app">github.com/vwzn/github-stats-app</a>
+                        </div>
+                    </div>
+                    <div className="project-card" data-aos="fade-right" data-aos-delay="700">
+                        <div className="project-title">
                             <h3>GitHub Stats Viewer</h3>
                         </div>
                         <div className="project-picture">
-                            <img src={Gsv} alt="Next Js Dashboard" />
+                            <img src={Gsv} alt="GitHub Stats Viewer" />
                         </div>
                         <div className="project-subtitle">
                             <p>A stunning GitHub statistics viewer with glassmorphism UI design.</p>
