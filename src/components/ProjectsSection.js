@@ -67,11 +67,11 @@ const ProjectsSection = ({ darkMode }) => {
                         </div>
                         <div className="website-project">
                             <p>Website</p>
-                            <a href="https://github-stats-app.vercel.app">github-stats-app.vercel.app</a>
+                            <a href="https://afauzan.vercel.app">afauzan.vercel.app</a>
                         </div>
                         <div className="github-project">
                             <p>Github</p>
-                            <a href="https://github.com/vwzn/github-stats-app">github.com/vwzn/github-stats-app</a>
+                            <a href="https://github.com/vwzn/portfoliov2">github.com/vwzn/portfoliov2</a>
                         </div>
                     </div>
                     <div className="project-card" data-aos="fade-right" data-aos-delay="700">
